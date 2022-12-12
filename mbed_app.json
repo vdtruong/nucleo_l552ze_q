@@ -38,7 +38,9 @@
     "target_overrides": {
         "*": {
             "platform.stdio-convert-newlines": 1,
-            "target.components_add": ["SD"]
+            "target.components_add": ["SD"],
+            "platform.stdio-buffered-serial": 1,
+            "platform.stdio-baud-rate":115200
         },
         "NUCLEO_L552ZE_Q": {
              "SPI_MOSI": "SPI_MOSI",
